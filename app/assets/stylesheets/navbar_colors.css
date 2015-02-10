@@ -1,0 +1,28 @@
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: black;  /*Sets the text hover color on navbar*/
+/* background-color: black; */
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: black; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+.navbar-default {
+  background-color: white;
+  border-color: #030033;
+}
+
+
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: black; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: black; /*Change active text color here*/
+    }
