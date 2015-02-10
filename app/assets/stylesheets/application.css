@@ -12,7 +12,9 @@
  *= require_tree .
  */
 
-
+body {
+	background-color: #FAFAFA;
+}
 
 .border {
 	border: 1px solid gray;
