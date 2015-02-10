@@ -6,12 +6,13 @@ color: black;  /*Sets the text hover color on navbar*/
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
  a:hover, .navbar-default .navbar-nav > .active > a:focus {
 color: black; /*BACKGROUND color for active*/
-background-color: #030033;
+/* background-color: black; */
 }
 
-.navbar-default {
-  background-color: white;
-  border-color: #030033;
+.navbar-default .navbar .nav .navbar-nav .navbar-collapse .navbar-header {
+  background-color: transparent;
+  border-bottom: black;
+  color: black;
 }
 
 

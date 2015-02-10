@@ -15,6 +15,7 @@
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
+  background-color: transparent;
   vertical-align: top;
   font-family: sans-serif;
 }

@@ -1,4 +1,14 @@
 
 .page-title {
-	height: 555px;
+	overflow:hidden;
+  padding-bottom:100%;
+}
+
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.image img{
+    position:absolute;
 }
