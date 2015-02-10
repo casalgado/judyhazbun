@@ -12,21 +12,7 @@
  *= require_tree .
  */
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  background-color: transparent;
-  vertical-align: top;
-  font-family: sans-serif;
-}
 
-.navbar-nav li {
-	margin: auto 13px auto 13px;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
 
 .border {
 	border: 1px solid gray;

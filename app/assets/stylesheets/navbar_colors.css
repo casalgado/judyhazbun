@@ -1,29 +1,94 @@
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-color: black;  /*Sets the text hover color on navbar*/
-/* background-color: black; */
+
+
+
+.navbar .navbar-nav {
+	background-color: blue;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-family: sans-serif;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
- a:hover, .navbar-default .navbar-nav > .active > a:focus {
-color: black; /*BACKGROUND color for active*/
-/* background-color: black; */
+.navbar-nav li {
+	margin: auto 13px auto 13px;
 }
 
-.navbar-default .navbar .nav .navbar-nav .navbar-collapse .navbar-header {
-  background-color: transparent;
-  border-bottom: black;
-  color: black;
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
+.navbar-default {
+	background-color: blue;
+}
 
-
- .nav > li > a:hover,
- .nav > li > a:focus {
-    text-decoration: none;
-    background-color: black; /*Change rollover cell color here*/
-  }
-
-
-  .navbar-default .navbar-nav > li > a {
-   color: black; /*Change active text color here*/
+/* navbar */
+.navbar-default {
+    background-color: blue;
+    color: blue;
+    border-color: transparent;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: black;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: black;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: black;
+    background-color: white;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: black;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: black;
     }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: black;
+    }
+}
+
