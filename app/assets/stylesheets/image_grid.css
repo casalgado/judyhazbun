@@ -1,0 +1,31 @@
+
+#container div {
+	border: 1px solid red !important;
+}
+
+.grid-image {
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: black;
+	float: left;
+	margin: 1% auto auto 1%;
+}
+
+.wh {
+	width: 300px;
+	padding-bottom: 300px;
+	
+}
+
+.w2 {
+	width: 630px;
+	padding-bottom: 300px;
+	
+}
+
+.h2 {
+	width: 300px;
+	padding-bottom: 630px;
+	
+}
+

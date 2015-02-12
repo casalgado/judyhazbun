@@ -14,3 +14,24 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+var ready = function() {
+  $('#megadiv').fadeOut(3000);
+  $('li').on('click', function() {
+		  $(this).hide().fadeIn(3000);
+		}); 
+  $('#container').masonry({
+    itemSelector : '.grid-image',
+    columnWidth: 30,
+    isFitWidth : true
+  });
+};
+
+
+
+
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
