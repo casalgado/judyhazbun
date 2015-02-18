@@ -18,11 +18,15 @@
 
 var ready = function() {
 
-  $('#container').masonry({
-    itemSelector : '.grid-image',
-    columnWidth: 300,
-    isFitWidth: true,
-    gutter: 18
+  var $container = $('#container');
+
+  $container.imagesLoaded( function() {
+    $container.masonry({
+      itemSelector : '.grid-image',
+      columnWidth: 300,
+      isFitWidth: true,
+      gutter: 18
+    });
   });
 
   $('ul.nav a').on('mouseover click', function() {
