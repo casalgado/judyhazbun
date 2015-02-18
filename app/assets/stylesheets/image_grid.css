@@ -1,6 +1,6 @@
 
 #container div {
-	border: 5px solid lightgray;
+	border: 0px solid black;
 }
 
 #container  {
@@ -16,6 +16,12 @@
 	float: left;
 	margin: 1% auto;
 }
+
+.grid-image img {
+	display: inline-block;
+}
+
+  
 
 .wh {
 	width: 300px;

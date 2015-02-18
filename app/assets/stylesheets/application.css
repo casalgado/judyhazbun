@@ -21,6 +21,10 @@ body {
 	border-bottom: 1px solid black;
 }
 
+.max-width {
+	max-width: 970px;
+}
+
 .border {
 	border: 1px solid gray;
 }
