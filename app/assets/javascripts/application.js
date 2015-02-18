@@ -16,13 +16,23 @@
 //= require_tree .
 
 
-var ready = function() { 
+var ready = function() {
+
   $('#container').masonry({
     itemSelector : '.grid-image',
     columnWidth: 300,
     isFitWidth: true,
     gutter: 18
   });
+
+  $('ul.nav a').on('mouseover click', function() {
+		$(this).addClass('border-bottom');
+	});
+
+	$('ul.nav a').on('mouseout', function() {
+		$(this).removeClass('border-bottom');
+	});
+
 };
 
 

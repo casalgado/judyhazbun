@@ -12,8 +12,13 @@
  *= require_tree .
  */
 
+
 body {
 	background-color: #FAFAFA;
+}
+
+.border-bottom {
+	border-bottom: 1px solid black;
 }
 
 .border {
@@ -31,3 +36,4 @@ body {
 .content {
 	height: 1500px;
 }
+
