@@ -1,31 +1,55 @@
 
 #container div {
-	border: 1px solid red !important;
+	border: 5px solid lightgray;
 }
+
+#container  {
+	border: 1px solid blue !important;
+	margin: auto auto auto auto;
+}
+
 
 .grid-image {
 	border-radius: 5px;
 	overflow: hidden;
 	background-color: black;
 	float: left;
-	margin: 1% auto auto 1%;
+	margin: 1% auto;
 }
 
 .wh {
 	width: 300px;
-	padding-bottom: 300px;
+	height: 300px;
 	
 }
 
 .w2 {
 	width: 630px;
-	padding-bottom: 300px;
+	height: 300px;
+	
+}
+
+.h1 {
+	width: 300px;
+	height: 200px;
 	
 }
 
 .h2 {
 	width: 300px;
-	padding-bottom: 630px;
+	height: 500px;
+	
+}
+
+.h3 {
+	width: 300px;
+	height: 630px;
+	
+}
+
+.h4 {
+	width: 300px;
+	height: 800px;
 	
 }
 

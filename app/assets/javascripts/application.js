@@ -16,15 +16,12 @@
 //= require_tree .
 
 
-var ready = function() {
-  $('#megadiv').fadeOut(3000);
-  $('li').on('click', function() {
-		  $(this).hide().fadeIn(3000);
-		}); 
+var ready = function() { 
   $('#container').masonry({
     itemSelector : '.grid-image',
-    columnWidth: 30,
-    isFitWidth : true
+    columnWidth: 300,
+    isFitWidth: true,
+    gutter: 18
   });
 };
 
