@@ -12,7 +12,6 @@
 .grid-image {
 	border-radius: 5px;
 	overflow: hidden;
-	background-color: black;
 	float: left;
 	margin: 1% auto;
 	display: inline-block;

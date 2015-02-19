@@ -29,12 +29,9 @@
 		<div class="container grid-image-container">
 			<div class ="row border">
 				<div id='container' class='border'>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-01.png') %> </div>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-04.png') %> </div>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-02.png') %> </div>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-05.png') %> </div>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-03.png') %> </div>
-					<div class="grid-image"> <%= image_tag('coleccionH-content-06.png') %> </div>
+					<% @image_names.each do |image_name| %>
+						<%= display_image(image_name) %>
+					<% end %>
 				</div>
 			</div>
 		</div>

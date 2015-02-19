@@ -5,11 +5,18 @@
 	width: 566px;
 	height: 81px;
 	margin: 15px auto auto auto;
+	/* background-image: url(black-logo.svg); */
+}
+
+.header-logo:hover {
+	/* background-image: url(black-logo.svg); */
 }
 
 .header-logo img {
 	display: block;
 	margin: auto;
+	position: relative;
+	bottom: 3px;
 }
 
 
