@@ -4,13 +4,13 @@ class PagesController < ApplicationController
   end
 
   def boutique
-  	filenames    = Dir.entries("/Users/carlosalbertosalgadohazbun/Desktop/judyhazbun/app/assets/images/boutique/content")
+  	filenames    = Dir.entries("#{Rails.root}/app/assets/images/boutique/content")
   	@image_names = filenames[3..-1].map { |x| "boutique/content/" + x }
   end
 
 
   def haz
-  	filenames    = Dir.entries("/Users/carlosalbertosalgadohazbun/Desktop/judyhazbun/app/assets/images/haz/content")
+  	filenames    = Dir.entries("#{Rails.root}/app/assets/images/haz/content")
   	@image_names = filenames[3..-1].map { |x| "haz/content/" + x }
   	render 'boutique'
   end
