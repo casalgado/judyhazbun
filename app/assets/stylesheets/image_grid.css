@@ -1,10 +1,8 @@
 
 #container div {
-	border: 0px solid black;
 }
 
 #container  {
-	border: 1px solid blue !important;
 	margin: auto auto auto auto;
 }
 
@@ -17,8 +15,6 @@
 	display: inline-block;
 }
 
-
-  
 
 .wh {
 	width: 300px;

@@ -18,6 +18,29 @@
 
 var ready = function() {
 
+  var $window = $(window);
+
+  $window.on('scroll', function () {
+    if ( $window.scrollTop() > 100 ) {
+      $('#nav').addClass('navbar-fixed-top')
+      $('#hero-container').addClass('hero-margin')
+    } else {
+      $('#nav').removeClass('navbar-fixed-top')
+      $('#hero-container').removeClass('hero-margin')
+    }
+  });
+
+  var $brand = $('<a class="navbar-brand" href="#">Brand</a>')
+
+  $window.on('scroll', function () {
+    if ( $window.scrollTop() > 117 ) {
+      $('#for-border').addClass('border-bottom')
+      $('navbar-header').append('<a class="navbar-brand" href="#">Brand</a>')
+    } else {
+      $('#for-border').removeClass('border-bottom')
+    }
+  });
+
   var $container = $('#container');
 
   $container.imagesLoaded( function() {
@@ -36,6 +59,8 @@ var ready = function() {
 	$('ul.nav a').on('mouseout', function() {
 		$(this).removeClass('border-bottom');
 	});
+
+
 
 };
 

@@ -1,6 +1,7 @@
 
 
 
+
 .hero {
 	overflow:hidden;
 	font-family: serif;
@@ -24,4 +25,8 @@
 .hero-text {
 	display: block;
 	margin-top: 90px;
+}
+
+.hero-margin {
+	margin-top: 80px;
 }

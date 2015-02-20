@@ -17,8 +17,17 @@ body {
 	background-color: #FAFAFA;
 }
 
+#for-border {
+	position:relative;
+	top: 1px;
+}
+
 .border-bottom {
 	border-bottom: 1px solid black;
+}
+
+.border-top {
+	border-top: 1px solid black;
 }
 
 .max-width {

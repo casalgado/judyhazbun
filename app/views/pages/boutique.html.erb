@@ -1,14 +1,14 @@
 
 
-	<div class="container">
+	<div id="hero-container" class="container border-bottom border-top" style="padding-bottom: 30px; padding-top: 30px">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
-				<div class="hero border border-radius">
+				<div class="hero border-radius">
 					<%= image_tag("hero-img-CH.png") %>
 				</div>
 			</div>
 			<div class="col-sm-6 col-xs-12">
-				<div class="hero border border-radius">
+				<div class="hero border-radius">
 					<div class="hero-text-holder">
 						<div class="hero-text">
 							<h3> Coleccion H </h3>
@@ -26,9 +26,9 @@
 		</div>
 	</div>
 
-		<div class="container grid-image-container">
-			<div class ="row border">
-				<div id='container' class='border'>
+		<div class="container grid-image-container" style="margin-top: 20px">
+			<div classd="row">
+				<div id='container' >
 					<% @image_names.each do |image_name| %>
 						<%= display_image(image_name) %>
 					<% end %>

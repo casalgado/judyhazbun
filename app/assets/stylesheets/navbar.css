@@ -25,6 +25,10 @@
   text-align: center;
 }
 
+.navbar-header a {
+  position: absolute;
+}
+
 
 /* navbar */
 .navbar-default {
