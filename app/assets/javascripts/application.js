@@ -30,14 +30,15 @@ var ready = function() {
     }
   });
 
-  var $brand = $('<a class="navbar-brand" href="#">Brand</a>')
+  var $brandImage = $('<a id="brand-logo" class="navbar-brand" href="#"><img src="assets/nav-brand-logo.svg" alt="brand"></a>')
 
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 117 ) {
       $('#for-border').addClass('border-bottom')
-      $('navbar-header').append('<a class="navbar-brand" href="#">Brand</a>')
+      $('.navbar-header').append($brandImage)
     } else {
       $('#for-border').removeClass('border-bottom')
+      $('.navbar-brand').remove()
     }
   });
 
