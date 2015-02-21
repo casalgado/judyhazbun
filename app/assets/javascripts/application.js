@@ -33,7 +33,13 @@ var ready = function() {
     }
   });
 
-  
+  // Modal
+
+  $(".grid-image").attr("data-toggle", "modal");
+  $(".grid-image").attr("data-target", "#myModal");
+  $(".grid-image").hover(function() {
+        $(this).css('cursor','pointer');
+    });
 
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 117 ) {
