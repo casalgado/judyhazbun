@@ -2,7 +2,7 @@
 /* Header */
 
 .header-logo {
-	width: 566px;
+	max-width: 566px;
 	height: 81px;
 	margin: 15px auto auto auto;
 	/* background-image: url(black-logo.svg); */
