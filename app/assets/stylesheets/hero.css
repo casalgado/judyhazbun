@@ -1,6 +1,10 @@
 
-
-
+#hero-container {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 
 .hero {
 	overflow:hidden;
@@ -29,4 +33,8 @@
 
 .hero-margin {
 	margin-top: 80px;
+}
+
+.border-radius {
+	border-radius: 5px;
 }

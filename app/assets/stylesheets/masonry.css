@@ -1,0 +1,13 @@
+
+#container  {
+	margin: auto auto auto auto;
+}
+
+.grid-image {
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+	margin: 1% auto;
+	display: inline-block;
+}
+
