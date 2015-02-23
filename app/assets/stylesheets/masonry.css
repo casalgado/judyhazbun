@@ -5,9 +5,13 @@
 
 .grid-image {
 	border-radius: 5px;
+	width: 225px;
 	overflow: hidden;
 	float: left;
 	margin: 1% auto;
 	display: inline-block;
+}
+
+.grid-image img {
 }
 

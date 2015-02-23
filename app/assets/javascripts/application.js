@@ -40,6 +40,10 @@ var ready = function() {
   $(".grid-image").hover(function() {
         $(this).css('cursor','pointer');
     });
+  $(".grid-image").on('click', function() {
+    var imageName = $(this).attr("id")
+    $('#modal-image').html("<img src='/assets/" + imageName + "-modal.png') >");
+  })
 
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 117 ) {
@@ -68,9 +72,9 @@ var ready = function() {
   $container.imagesLoaded( function() {
     $container.masonry({
       itemSelector : '.grid-image',
-      columnWidth: 300,
+      columnWidth: 225, // 300 - 225
       isFitWidth: true,
-      gutter: 18
+      gutter: 10 // 18 - 10
     });
   });
 
