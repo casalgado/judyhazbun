@@ -10,7 +10,7 @@ class PagesController < ApplicationController
   	Dir.chdir("#{Rails.root}/app/assets/images/haz/content/grid")
     filenames    = Dir.glob("*.png")
     @image_names = filenames.map { |x| "haz/content/grid/" + x }
-  	render 'boutique'
+  	
   end
 
   def novias
