@@ -54,7 +54,6 @@ var ready = function() {
   });
 
 
-
   // Nav link hover
 
   $('ul.nav a').on('mouseover click', function() {

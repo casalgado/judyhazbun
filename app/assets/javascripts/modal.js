@@ -17,3 +17,17 @@ var modal = function() {
 
 
 $(document).ready(modal);
+
+function resize() {
+    if ($(window).width() < 514) {
+     $('#nav').addClass('navbar-fixed-top')
+     $('#hero-container').addClass('hero-margin')
+     $('#for-border').addClass('border-bottom')
+     $('.navbar-header').append($brandImage)
+     }
+};
+
+$(document).ready( function() {
+    $(window).resize(resize);
+    resize();
+});
