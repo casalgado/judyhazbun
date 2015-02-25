@@ -7,6 +7,7 @@ Judyhazbun::Application.routes.draw do
 		get 'judy'    , on: :collection
 		get 'novias'  , on: :collection
 		get 'home'    , on: :collection
+		get 'modal'    , on: :collection
   end
 
   root to: "pages#home"

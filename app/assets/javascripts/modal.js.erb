@@ -9,8 +9,17 @@ var modal = function() {
 	        $(this).css('cursor','pointer');
 	    });
 	  $(".grid-image").on('click', function() {
-	    var imageName = $(this).attr("id")
-	    $('#modal-image').html("<%= escape_javascript(image_tag('hero-template-02.png'))%>");
+	    var $imageName = $(this).attr("id")
+	    var dataString = "<%= escape_javascript(image_tag('black-logo.jpg'))%>"
+	    alert(dataString)
+		    $.ajax({
+		        url: "/haz",
+		        type: "get",
+		        data: dataString,
+		        success: function() {
+            	$('#modal-image').html(dataString);
+            }
+		    });
 	  });
 };
 

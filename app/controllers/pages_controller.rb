@@ -19,6 +19,10 @@ class PagesController < ApplicationController
   def jqmp
   end
 
+  def modal
+    debugger
+  end
+
   def judy
   end
 
