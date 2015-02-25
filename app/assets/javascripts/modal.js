@@ -10,16 +10,7 @@ var modal = function() {
 	    });
 	  $(".grid-image").on('click', function() {
 	    var $imageName = $(this).attr("id")
-	    var dataString = "<%= escape_javascript(image_tag('boutique/content/modal/boutique-template-02-modal.png'))%>"
-	    alert(dataString)
-		    $.ajax({
-		        url: "/haz",
-		        type: "get",
-		        data: dataString,
-		        success: function() {
-            	$('#modal-image').html(dataString);
-            }
-		    });
+	    $('#modal-image').html("<img src='/assets/" + $imageName + "-modal.png') >");
 	  });
 };
 
