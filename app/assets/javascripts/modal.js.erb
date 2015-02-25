@@ -10,7 +10,7 @@ var modal = function() {
 	    });
 	  $(".grid-image").on('click', function() {
 	    var imageName = $(this).attr("id")
-	    $('#modal-image').html("<img src='/assets/" + imageName + "-modal.png') >");
+	    $('#modal-image').html("<%= escape_javascript(image_tag('hero-template-02.png'))%>");
 	  });
 };
 

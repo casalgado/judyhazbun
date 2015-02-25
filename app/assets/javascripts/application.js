@@ -16,6 +16,14 @@
 //= require_tree .
 
 
+
+
+
+
+
+
+
+
 var ready = function() {
 
   // Navbar scroll
@@ -33,9 +41,7 @@ var ready = function() {
     }
   });
 
-
-
-  // Navbar fixed top
+    // Navbar fixed top
 
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 128 ) {
@@ -47,17 +53,21 @@ var ready = function() {
     }
   });
 
+
+
   // Nav link hover
 
   $('ul.nav a').on('mouseover click', function() {
-		$(this).addClass('border-bottom');
-	});
+    $(this).addClass('border-bottom');
+  });
 
-	$('ul.nav a').on('mouseout', function() {
-		$(this).removeClass('border-bottom');
-	});
+  $('ul.nav a').on('mouseout', function() {
+    $(this).removeClass('border-bottom');
+  });
 
   // Masonry
+
+  $('.navbar-brand').remove();
 
   var $container = $('#container');
 
@@ -78,12 +88,7 @@ var ready = function() {
 
 
 
+
 $(document).ready(ready);
 $(document).on('page:load', ready);
 
-$(document).ready(function () {
-    $('.navbar-brand').remove();
-  });
-$(document).on('page:load', function () {
-    $('.navbar-brand').remove();
-  });
