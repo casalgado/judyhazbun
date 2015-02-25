@@ -4,8 +4,8 @@
 }
 
 .grid-image {
-	border-radius: 5px;
-	width: 225px;
+	border: 2px solid black;
+	width: 223px;
 	overflow: hidden;
 	float: left;
 	margin: 1% auto;
@@ -15,3 +15,6 @@
 .grid-image img {
 }
 
+body {
+
+}
