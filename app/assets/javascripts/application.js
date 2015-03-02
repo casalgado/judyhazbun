@@ -58,11 +58,11 @@ var ready = function() {
 
   // Nav link hover
 
-  $('ul.nav a').on('mouseover click', function() {
+  $('ul.nav:not(.social-icons) a').on('mouseover click', function() {
     $(this).addClass('border-bottom');
   });
 
-  $('ul.nav a').on('mouseout', function() {
+  $('ul.nav:not(.social-icons) a').on('mouseout', function() {
     $(this).removeClass('border-bottom');
   });
 

@@ -1,31 +1,40 @@
-
 <div id="footer-top-border" class="container-fluid">
 </div>
 
 <div class="container" >
 	<nav id="nav" class="navbar navbar-default" style="">
 		<div id="for-border" class="">
-		  <div class="container-fluid" style="padding-bottom: 15px; padding-top: 3px;">
+		  <div class="container-fluid" style="padding-bottom: 15px; padding-top: 3px">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
+		    <div id="navbar-header-nav" class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
 		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"> </span>
+		        <span class="icon-bar"> </span>
+		        <span class="icon-bar"> </span>
 		      </button>
+		      <a id="brand-logo" class="navbar-brand hidden-sm" href="#"><%= image_tag("nav-brand-logo.svg") %> </a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div id='footer-nav' class="navbar-collapse" id="bs-example-navbar-collapse-2">
-		      <ul class="nav navbar-nav">
-		         <li class=""> <%= link_to("PRENSA", boutique_pages_path, method: :get ) %> </a></li>
-		         <li class=""> <%= link_to("CONTACTO"     , haz_pages_path     , method: :get ) %> </a></li>
-		         <li class=""> <%= link_to("REDES"  , novias_pages_path  , method: :get ) %> </a></li>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		      <ul class="nav navbar-nav social-icons" >
+		      	<li class=""> <%= link_to(image_tag("social/social-media-icons-01.svg"), 'https://www.facebook.com/judyhazbunoficial') %> </li>
+		      	<li class=""> <%= link_to(image_tag("social/social-media-icons-02.svg"), '#') %> </li>
+		      	<li class=""> <%= link_to(image_tag("social/social-media-icons-03.svg"), 'https://twitter.com/judyhazbun') %> </li>
+		      	<li class=""> <%= link_to(image_tag("social/social-media-icons-04.svg"), '#') %> </li>
+		      	<li class=""> <%= link_to(image_tag("social/social-media-icons-05.svg"), 'https://instagram.com/judyhazbun/') %> </li>
+		      </ul>
+		      <br />
+		      <ul class="nav navbar-nav" >
+		        <li class=""> <%= link_to("PRENSA"  , boutique_pages_path, method: :get ) %> </li>
+		        <li class=""> <%= link_to("CONTACTO", haz_pages_path     , method: :get ) %> </li>
+		        <li class=""> <%= link_to("VALOR"   , novias_pages_path  , method: :get ) %> </li>
 		      </ul>
 		      
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		 </div><!-- #for-border -->
 	</nav>
-
-
-
 </div>
+
