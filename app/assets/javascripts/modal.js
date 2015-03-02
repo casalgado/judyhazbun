@@ -24,6 +24,8 @@ function resize() {
      $('#for-border-on-page-top').remove()
      $('#home-image-container').addClass('hero-margin')
      $('#for-border').addClass('border-bottom')
+     $('#footer-nav').addClass('navbar')
+     $('#footer-nav').removeClass('navbar-collapse')
      $('.navbar-header').append($brandImage)
      }
 };

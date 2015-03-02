@@ -17,6 +17,10 @@ body {
 	background-color: #FAFAFA;
 }
 
+a {
+	font-family: 'Syncopate', sans-serif;
+	font-weight: 400;
+}
 
 #for-border {
 	position:relative;
