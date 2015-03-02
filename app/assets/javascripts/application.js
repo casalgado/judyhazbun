@@ -35,9 +35,11 @@ var ready = function() {
     if ( $window.scrollTop() > 96 ) {
       $('#nav').addClass('navbar-fixed-top')
       $('#hero-container').addClass('hero-margin')
+      $('#home-image-container').addClass('hero-margin')
     } else {
       $('#nav').removeClass('navbar-fixed-top')
       $('#hero-container').removeClass('hero-margin')
+      $('#home-image-container').removeClass('hero-margin')
     }
   });
 
