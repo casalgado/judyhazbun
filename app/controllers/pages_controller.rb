@@ -20,7 +20,6 @@ class PagesController < ApplicationController
   end
 
   def modal
-    debugger
   end
 
   def judy
