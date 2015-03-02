@@ -22,7 +22,7 @@ function resize() {
     if ($(window).width() < 514) {
      $('#nav').addClass('navbar-fixed-top')
      $('#for-border-on-page-top').remove()
-     $('#hero-container').addClass('hero-margin')
+     $('#home-image-container').addClass('hero-margin')
      $('#for-border').addClass('border-bottom')
      $('.navbar-header').append($brandImage)
      }
