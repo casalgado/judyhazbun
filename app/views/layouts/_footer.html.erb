@@ -1,30 +1,25 @@
 
 <div class="container" >
-	<div class="header-logo hidden-xs" >
-		<%= image_tag("black-logo.svg") %>
-	</div>
-
 
 	<nav id="nav" class="navbar navbar-default" style="">
 		<div id="for-border" class="">
-		  <div class="container-fluid" style="padding-bottom: 15px; padding-top: 3px">
+		  <div class="container-fluid" style="padding-bottom: 15px; padding-top: 3px; border-top:2px solid black">
 		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div id="navbar-header-nav" class="navbar-header">
+		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"> </span>
 		        <span class="icon-bar"> </span>
 		        <span class="icon-bar"> </span>
 		      </button>
-		      <a id="brand-logo" class="navbar-brand hidden-sm" href="#"><%= image_tag("nav-brand-logo.svg") %> </a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav ">
-		         <li class=""> <%= link_to("BOUTIQUE", boutique_pages_path, method: :get ) %> </a></li>
-		         <li class=""> <%= link_to("HAZ"     , haz_pages_path     , method: :get ) %> </a></li>
-		         <li class=""> <%= link_to("NOVIAS"  , novias_pages_path  , method: :get ) %> </a></li>
+		         <li class=""> <%= link_to("PRENSA", boutique_pages_path, method: :get ) %> </a></li>
+		         <li class=""> <%= link_to("CONTACTO"     , haz_pages_path     , method: :get ) %> </a></li>
+		         <li class=""> <%= link_to("REDES"  , novias_pages_path  , method: :get ) %> </a></li>
 		         <li class=""> <%= link_to("JQMP"    , jqmp_pages_path    , method: :get ) %> </a></li>
 		         <li class=""> <%= link_to("JUDY"    , judy_pages_path    , method: :get ) %> </a></li>
 		      </ul>

@@ -48,7 +48,7 @@ var ready = function() {
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 128 ) {
       $('#for-border').addClass('border-bottom')
-      $('.navbar-header').append($brandImage)
+      $('#navbar-header-nav').append($brandImage)
     } else {
       $('#for-border').removeClass('border-bottom')
       $('.navbar-brand').remove()
