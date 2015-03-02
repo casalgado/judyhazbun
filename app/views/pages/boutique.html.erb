@@ -1,5 +1,8 @@
 
 
+	<div id="for-border-on-page-top" class="container-fluid for-border-on-page">
+	</div>
+
 	<div id="hero-container" class="container">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12">
@@ -15,15 +18,18 @@
 		</div>
 	</div>
 
-		<div class="container grid-image-container" style="margin-top: 20px">
-			<div classd="row">
-				<div id='container' >
-					<% @image_names.each do |image_name| %>
-						<%= display_image(image_name) %>
-					<% end %>
-				</div>
+	<div class="container-fluid for-border-on-page">
+	</div>
+
+	<div class="container grid-image-container" style="margin-top: 20px">
+		<div classd="row">
+			<div id='container' >
+				<% @image_names.each do |image_name| %>
+					<%= display_image(image_name) %>
+				<% end %>
 			</div>
 		</div>
+	</div>
 
 
 
