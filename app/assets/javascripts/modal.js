@@ -26,7 +26,7 @@ function resize() {
      $('#for-border').addClass('border-bottom')
      $('#footer-nav').addClass('navbar')
      $('#footer-nav').removeClass('navbar-collapse')
-     $('.navbar-header').append($brandImage)
+     $('#navbar-header-nav').append($brandImage)
      }
 };
 
