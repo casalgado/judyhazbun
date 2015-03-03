@@ -26,6 +26,16 @@
 
 var ready = function() {
 
+  $city = $('.city')
+  $city.tooltip('hide')
+  $city.on('click', function (e) {
+    e.preventDefault()
+    $city.tooltip('hide')
+  })
+
+  $city.popover()
+
+
   // Navbar scroll
 
   var $window = $(window);

@@ -1,0 +1,75 @@
+
+.cities {
+	list-style-type: none;
+}
+
+.cities li {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+}
+
+#city1 {
+	top: 21.9%;
+	left: 33.2%;
+}
+
+#city2 {
+	top: 20.2%;
+	left: 38.2%;
+}
+
+#city3 {
+	top: 26.7%;
+	left: 28.1%;	
+}
+
+#city4 {
+	top: 26.9%;
+	left: 45.4%;	
+}
+
+#city5 {
+	top: 35.6%;
+	left: 28.7%;	
+}
+
+#city6 {
+	top: 40.6%;
+	left: 24.5%;
+}
+
+#city7 {
+	top: 48.6%;
+	left: 50.6%;	
+}
+
+#city8 {
+	top: 54.8%;
+	left: 45.9%;	
+}
+
+#city9 {
+	top: 62%;
+	left: 26.5%;	
+}
+
+#city10 {
+	top: 76.7%;
+	left: 28.8%;
+}
+
+#city11 {
+	top: 79.2%;
+	left: 41.2%;	
+}
+
+#city12 {
+	top: 84.8%;
+	left: 18.2%;	
+}
+
+#city13 {
+	top: 89.2%;
+	left: 28.8%;	
+}
