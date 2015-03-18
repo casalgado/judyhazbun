@@ -40,6 +40,7 @@ var ready = function() {
 
   var $window = $(window);
   var $brandImage = $('.navbar-brand');
+  $brandImage.hide()
 
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 96 ) {
@@ -58,10 +59,10 @@ var ready = function() {
   $window.on('scroll', function () {
     if ( $window.scrollTop() > 128 ) {
       $('#for-border').addClass('border-bottom')
-      $('#navbar-header-nav').append($brandImage)
+      $brandImage.fadeIn(1000)
     } else {
       $('#for-border').removeClass('border-bottom')
-      $('.navbar-brand').remove()
+      $brandImage.fadeOut(100)
     }
   });
 
@@ -78,7 +79,6 @@ var ready = function() {
 
   // Masonry
 
-  $('.navbar-brand').remove();
 
   var $container = $('#container');
 

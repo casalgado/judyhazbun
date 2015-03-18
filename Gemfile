@@ -30,15 +30,11 @@ gem 'byebug', '3.5.1'
 
 gem "fog", "~> 1.3.1"
 
-gem 'figaro'
-gem "spreadsheet", "0.9.8"
-gem 'roo', '~> 1.13.2'
-gem 'axlsx', '~> 2.0.1'
-gem 'axlsx_rails', '~> 0.2.0'
+gem 'figaro', "1.1.0"
 gem 'will_paginate', '~> 3.0.6'
-gem 'will_paginate-bootstrap'
+gem 'will_paginate-bootstrap', '1.0.1'
 gem 'birthday', '~> 0.3.0'
-gem 'rails_admin'
+gem 'rails_admin', '0.6.6'
 
 
 group :doc do
@@ -66,8 +62,8 @@ group :test do
 end
 
 group :production do
-	gem 'pg'
-	gem 'rails_12factor'
+	gem 'pg', '0.18.1'
+	gem 'rails_12factor', '0.0.3'
 end
 
 
