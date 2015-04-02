@@ -1,0 +1,14 @@
+<h1>Graphics#new</h1>
+
+<%= form_for @graphic, :url => graphics_path, :html => { :multipart => true } do |f| %>
+  
+  <%= f.text_field :name %>
+  <%= f.text_area  :description %>
+
+  <%= f.hidden_field :section_id, value: '1' %>
+
+  <%= f.file_field :visual %>
+
+
+  <%= f.submit %>
+<% end %>

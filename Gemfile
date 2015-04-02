@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.0'
 
 # Rails Gems:
 
@@ -13,14 +14,8 @@ gem 'jbuilder', '1.2'
 # Added by me:
 
 gem 'devise', '3.4.1'
-gem 'jquery-ui-rails', '5.0.2'
-gem 'jquery-timepicker-addon-rails', '1.4.1'
 gem 'ransack', "1.2.3"
-gem 'fullcalendar-rails', "2.0.2.0"
 gem 'gon', '5.2.3'
-gem 'mini_magick', "~> 4.0.0.rc"
-
-gem 'carrierwave', '0.9.0'
 
 gem 'bootstrap-sass', '3.2.0.2'
 gem 'autoprefixer-rails', '4.0.0.1'
@@ -28,14 +23,20 @@ gem 'bootstrap_form'
 gem "faker", '1.4.3'
 gem 'byebug', '3.5.1'
 
-gem "fog", "~> 1.3.1"
 
-gem 'figaro', "1.1.0"
-gem 'will_paginate', '~> 3.0.6'
-gem 'will_paginate-bootstrap', '1.0.1'
-gem 'birthday', '~> 0.3.0'
 gem 'rails_admin', '0.6.6'
 
+gem 'aws-sdk', '~> 2.0'
+gem 'aws-sdk-v1'
+
+gem "paperclip", "~> 4.2"
+gem "papercrop"
+
+gem 'carrierwave', '0.9.0'
+gem 'carrierwave-crop'
+gem 'mini_magick'
+gem "fog"
+gem 'fog-aws'
 
 group :doc do
   gem 'sdoc', require: false
@@ -53,6 +54,7 @@ group :development, :test do
 	gem "guard-rspec", '4.3.1'
 	gem 'debugger', '1.6.8'
 	gem 'mailcatcher'
+	gem 'figaro', "1.1.0"
 end
 
 group :test do

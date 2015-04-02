@@ -1,0 +1,9 @@
+<h1>Graphics#show</h1>
+<p>Find me in app/views/graphics/show.html.erb</p>
+
+
+<div style="height:900px">
+	<%= image_tag @graphic.visual.url(:large) %>
+	<%= image_tag @graphic.visual.url(:medium) %>
+	<%= image_tag @graphic.visual.url(:small) %>
+</div>

@@ -8,5 +8,9 @@ module ApplicationHelper
 		content_tag(:div, image_tag("#{image_name}"))
 	end
 
+	def display_model_image(graphic)
+		content_tag(:a, image_tag(graphic.visual.url(:small)), class: "grid-image", id: "#{graphic.visual.url(:large)}", data: "#{graphic.description}")
+	end
+
 
 end

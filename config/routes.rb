@@ -1,5 +1,9 @@
 Judyhazbun::Application.routes.draw do
   
+
+  devise_for :admins
+  resources :graphics
+  resources :sections
   resources :pages, :path => '' do
 		get 'boutique', on: :collection
 		get 'haz'     , on: :collection

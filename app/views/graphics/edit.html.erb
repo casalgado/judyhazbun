@@ -1,0 +1,15 @@
+
+<h3> Edit </h3>
+
+<%= form_for @graphic, :url => graphic_path, :html => { :multipart => true } do |f| %>
+  
+  <%= f.text_field :name %>
+  <%= f.text_area  :description %>
+
+  <%= f.hidden_field :section_id, value: '1' %>
+
+  <%= f.file_field :visual %>
+
+  <%= f.submit %>
+
+<% end %>

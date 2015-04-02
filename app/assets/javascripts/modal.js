@@ -3,15 +3,18 @@
 var modal = function() {
 	  // Modal
 
-	  $(".grid-image").attr("data-toggle", "modal");
-	  $(".grid-image").attr("data-target", "#myModal");
+
 	  $(".grid-image").hover(function() {
 	        $(this).css('cursor','pointer');
 	    });
 	  $(".grid-image").on('click', function() {
-	    var $imageName = $(this).attr("id")
-	    $('#modal-image').html("<img src='/modal/" + $imageName + "-modal.png') >");
+        var $imageName = $(this).attr("id")
+	    var $imageDescription = $(this).attr("data")
+	    $('#modal-image').html("<img src='" + $imageName + "') >");
+        $('#image-description').html($imageDescription)
 	  });
+      $(".grid-image").attr("data-toggle", "modal");
+      $(".grid-image").attr("data-target", "#myModal");
 };
 
 

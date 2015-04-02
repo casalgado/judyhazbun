@@ -1,0 +1,41 @@
+
+
+	<div id="for-border-on-page-top" class="container-fluid for-border-on-page">
+	</div>
+
+	<div id="hero-container" class="container">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="hero">
+					<%= image_tag("hero-template-01.png") %>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<div class="hero">
+					<%= image_tag("hero-template-02.png") %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid for-border-on-page">
+	</div>
+
+	<div class="container grid-image-container" style="margin-top: 20px">
+		<div classd="row">
+			<div id='container' >
+				<% @graphics.each do |graphic| %>
+					<%= display_model_image(graphic) %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="">
+
+		<%= render 'modal' %>
+
+	</div>

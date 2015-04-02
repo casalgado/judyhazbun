@@ -16,3 +16,6 @@
 /tmp
 
 /app/assets/*.png
+
+# Ignore application configuration
+/config/application.yml
