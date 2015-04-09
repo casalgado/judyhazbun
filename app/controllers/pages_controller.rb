@@ -13,6 +13,9 @@ class PagesController < ApplicationController
   end
 
   def novias
+    section = Section.find(1)
+    @graphics = section.graphics
+    render "sections/show"
   end
 
   def jqmp

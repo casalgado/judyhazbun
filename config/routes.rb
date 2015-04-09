@@ -3,7 +3,9 @@ Judyhazbun::Application.routes.draw do
 
   devise_for :admins
   resources :graphics
-  resources :sections
+  resources :sections do
+  	match 'novia' => 'sections#show', as: :novias, via: [:get, :post], controller: :sections
+  end
   resources :pages, :path => '' do
 		get 'boutique', on: :collection
 		get 'haz'     , on: :collection

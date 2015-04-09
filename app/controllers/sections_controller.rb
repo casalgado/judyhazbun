@@ -6,6 +6,7 @@ class SectionsController < ApplicationController
   end
 
   def edit
+    @section = Section.find(params[:id])
   end
 
   def update
@@ -16,7 +17,7 @@ class SectionsController < ApplicationController
 
   def show
     @header = "header-img"
-    @graphics = Section.first.graphics.shuffle
+    @graphics = Section.find(params[:id]).graphics.shuffle
   end
 
   def destroy

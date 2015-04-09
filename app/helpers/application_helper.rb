@@ -9,7 +9,7 @@ module ApplicationHelper
 	end
 
 	def display_model_image(graphic)
-		content_tag(:a, image_tag(graphic.visual.url(:small)), class: "grid-image", id: "#{graphic.visual.url(:large)}", data: "#{graphic.description}")
+		content_tag(:a, image_tag(graphic.visual.url(:small)), class: "grid-image", id: "#{graphic.visual.url(:medium)}", data: "#{graphic.description}")
 	end
 
 

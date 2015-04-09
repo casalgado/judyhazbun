@@ -33,19 +33,21 @@ class VisualUploader < CarrierWave::Uploader::Base
 
   # Create different versions of your uploaded files:
 
-
-    version :small do
-      process crop: [:visual, 568, 819] 
-      resize_to_limit(300,400)
+    version :large do
+      process :resize_to_fit => [800, 1200]
     end
 
     version :medium do
-      process :resize_to_limit => [300, 629]
+      process :resize_to_fit => [568, 819]
     end
 
-    version :large do
-      process :resize_to_limit => [568, 819]
+    version :small do
+      process crop: :visual
+      resize_to_fit(234,629)
     end
+
+    
+
 
 
 

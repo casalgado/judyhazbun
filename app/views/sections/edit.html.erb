@@ -1,2 +1,12 @@
-<h1>Sections#edit</h1>
-<p>Find me in app/views/sections/edit.html.erb</p>
+
+<%= link_to("AGREGAR IMAGEN", new_graphic_path(:section_id => @section.id)) %> 
+
+<div id="section-edit" class="border">
+	<% for graphic in @section.graphics %>
+		<div class="mini-image-container border">
+			<%= image_tag(graphic.visual.url(:small)) %>
+			<%= link_to("EDITAR", edit_graphic_path(graphic, :section_id => @section.id)) %> 
+		</div>
+		
+	<% end %>
+</div>

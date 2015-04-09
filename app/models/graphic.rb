@@ -1,6 +1,7 @@
 class Graphic < ActiveRecord::Base
 
 	belongs_to :section
+	attr_accessor :crop_size
 
 	mount_uploader :visual, VisualUploader
 	crop_uploaded :visual

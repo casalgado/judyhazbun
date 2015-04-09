@@ -23,7 +23,16 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav ">
 		        
-		         <li class=""> <%= link_to("BOUTIQUE", boutique_pages_path, method: :get ) %> </li>
+		         <li class=""> <div class="dropdown">
+								  <div class="nav-div dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+								    BOUTIQE
+								  </div>
+								  <ul class="dropdown-menu nav-div-menu" role="menu" aria-labelledby="dropdownMenu1">
+								    <li role="presentation"><%= link_to("COLECCION H", boutique_pages_path, method: :get ) %></li>
+  									<li role="presentation"><%= link_to("JUDY HAZBUN", boutique_pages_path, method: :get ) %></li>
+								  </ul>
+								</div> 
+							</li>
 		         <li class=""> <%= link_to("HAZ"     , haz_pages_path     , method: :get ) %> </li>
 		         <li class=""> <%= link_to("NOVIAS"  , novias_pages_path  , method: :get ) %> </li>
 		         <li class=""> <%= link_to("JQMP"    , jqmp_pages_path    , method: :get ) %> </li>
@@ -35,6 +44,8 @@
 		 </div><!-- #for-border -->
 	</nav>
 </div>
+
+
 
 
 

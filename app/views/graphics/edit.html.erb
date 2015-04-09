@@ -1,4 +1,3 @@
-
 <h3> Edit </h3>
 
 <%= form_for @graphic, :url => graphic_path, :html => { :multipart => true } do |f| %>
@@ -6,9 +5,14 @@
   <%= f.text_field :name %>
   <%= f.text_area  :description %>
 
-  <%= f.hidden_field :section_id, value: '1' %>
+  <%= f.hidden_field :section_id, value: @section_id %>
 
   <%= f.file_field :visual %>
+
+  <%= f.radio_button :crop_size, "100", :checked => true %>
+	<%= f.label :crop_size, "Normal" %>
+	<%= f.radio_button :crop_size, "47" %>
+	<%= f.label :crop_size, "Grande" %>
 
   <%= f.submit %>
 
