@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+   sections = ["Coleccion H", "Judy Hazbun", "Haz", "Novias", "JQMP", "Judy"]
+
+   sections.each do |section|
+   	Section.create!(name: section)
+   end
