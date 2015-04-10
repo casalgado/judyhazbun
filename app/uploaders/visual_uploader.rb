@@ -43,7 +43,7 @@ class VisualUploader < CarrierWave::Uploader::Base
 
     version :small do
       process crop: :visual
-      resize_to_fit(234,629)
+      resize_to_fit(234,829)
     end
 
     
