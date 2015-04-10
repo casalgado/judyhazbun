@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.1.4'
 
 # Rails Gems:
 
@@ -52,7 +52,6 @@ group :development, :test do
 	gem "factory_girl_rails", "4.5.0"
 	gem 'guard', '2.8.2'
 	gem "guard-rspec", '4.3.1'
-	gem 'debugger', '1.6.8'
 	gem 'mailcatcher'
 	gem 'figaro', "1.1.0"
 end
