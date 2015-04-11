@@ -7,7 +7,9 @@ Judyhazbun::Application.routes.draw do
   	match 'novia' => 'sections#show', as: :novias, via: [:get, :post], controller: :sections
   end
   resources :pages, :path => '' do
-		get 'boutique', on: :collection
+    get 'boutique', on: :collection
+    get 'coleccionh', on: :collection
+		get 'judyhazbun', on: :collection
 		get 'haz'     , on: :collection
 		get 'jqmp'    , on: :collection
 		get 'judy'    , on: :collection
