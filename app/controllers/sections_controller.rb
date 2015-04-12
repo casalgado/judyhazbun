@@ -7,6 +7,7 @@ class SectionsController < ApplicationController
 
   def edit
     @section = Section.find(params[:id])
+    @graphics = Section.find(params[:id]).graphics.order('position')
   end
 
   def update
@@ -17,9 +18,16 @@ class SectionsController < ApplicationController
 
   def show
     @header = "header-img"
-    @graphics = Section.find(params[:id]).graphics.shuffle
+    @graphics = Section.find(params[:id]).graphics.order('position')
   end
 
   def destroy
   end
+
+  def shuffle
+    section = Section.find(params[:id])
+    Graphic.shuffle(section.graphics)
+    redirect_to edit_section_path(section)
+  end
+
 end

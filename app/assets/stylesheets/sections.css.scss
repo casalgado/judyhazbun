@@ -21,3 +21,32 @@
 .mini-image-container img {
 	width: 100%;
 }
+
+.edit-image-overlay {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	color: white;
+	background-color: black;
+	padding: 3px 12px 3px 12px;
+}
+
+.edit-image-overlay-link {
+	position: absolute;
+	bottom: 0;
+	left: 5px;
+	color: white;
+	background-color: black;
+	padding: 3px 12px 3px 12px;
+}
+
+.edit-image-overlay-link > a:link, 
+.edit-image-overlay-link > a:active, 
+.edit-image-overlay-link > a:visited, 
+.edit-image-overlay-link > a:hover {
+	color: white !important;
+}
+
+.edit-image {
+	cursor: default !important;
+}
