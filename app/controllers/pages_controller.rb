@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   def coleccionh
     section      = Section.find(1)
-    @graphics    = section.graphics
+    @graphics    = section.graphics.order('position')
     @image_left  = "hero-template-01.png"
     @image_right = "hero-template-02.png"
     render "sections/show"
