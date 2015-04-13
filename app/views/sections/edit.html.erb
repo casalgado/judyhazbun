@@ -2,7 +2,15 @@
 
 
 <%= link_to("AGREGAR IMAGEN", new_graphic_path(:section_id => @section.id)) %> 
-<%= link_to("SHUFFLE", shuffle_section_path(:section_id => @section.id )) %> 
+<%= link_to("SHUFFLE", shuffle_section_path(:section_id => @section.id )) %>
+
+<%= form_for @section do |f| %>
+	
+  <%= f.text_field :swap_1 %>
+  <%= f.text_field :swap_2 %>
+  <%= f.submit 'SWAP' %>
+  
+<% end %>
 
 <div class="container grid-image-container" style="margin-top: 20px">
 		<div classd="row">

@@ -31,6 +31,15 @@ class Graphic < ActiveRecord::Base
   	end
   end
 
+  def self.swap(graphic1, graphic2)
+    position1 = graphic1.position
+    graphic1.position = graphic2.position
+    graphic2.position = position1
+    graphic1.save
+    graphic2.save
+  end
+
+
   private
 
   def set_position
