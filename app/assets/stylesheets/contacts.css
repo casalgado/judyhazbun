@@ -1,0 +1,35 @@
+
+.contact-list li {
+	padding-left:0;
+	font-size: 18px;
+	list-style-type: none;
+	color: gray;
+	font-family: "roboto";
+	font-weight: 300;
+	width: 250px;
+}
+
+.contact-list {
+	padding-left:0;
+
+	list-style-type: none;
+
+}
+
+.contact h3 {
+	font-family: "roboto"
+}
+
+.contact textarea {
+	height: 120px;
+}
+
+.contact input[type="submit"] { 
+	float: right;
+	margin-right: 15px; 
+}
+
+.contact-text {
+
+}
+

@@ -1,0 +1,36 @@
+
+<h3>Contáctanos</h3>
+<ul class="contact-list">
+	<li> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> &nbsp <span class="contact-text"> Cra 52 # 79 - 249 </span> </li>
+	<li> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &nbsp <span class="contact-text"> 385 4667 - 68</span> </li>
+	<li> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> &nbsp <span class="contact-text"> 318 330 6348 </span> </li>
+	<li> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> &nbsp <span class="contact-text"> gerencia@judyhazbun.com </span> </li>
+</ul>
+
+
+
+<h3> Comunicate </h3>
+
+
+<%= bootstrap_form_for @contact, :html => { :multipart => true } do |f| %>
+
+   
+    <div class="contact-form-margin col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+    <%= f.text_field :name,   layout: :default, hide_label: true, placeholder: "Nombre" %> </div>
+    
+    <div id="contact-email-field" class="contact-form-margin col-lg-6 col-md-6 col-sm-6 col-xs-6"> 
+    <%= f.text_field :email,    layout: :default, hide_label: true, placeholder: "Email" %> </div>
+
+    <div class="contact-form-margin col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+    <%= f.text_field :subject,        layout: :default, hide_label: true, placeholder: "Asunto" %> </div>    
+
+    <div class="contact-form-margin col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+    <%= f.text_area :message,    layout: :default, hide_label: true, placeholder: "Mensaje" %> </div>
+
+    <%= f.form_group do %>
+    	<%= f.submit "Enviar" %>
+  	<% end %>
+  	
+
+<% end %>
+

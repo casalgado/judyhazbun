@@ -4,6 +4,10 @@
 	border-bottom: 8px solid black;
 }
 
+.thin-border-on-page {
+	border-bottom: 1px solid black;
+}
+
 #hero-container {
 	padding-top: 30px;
 	padding-bottom: 30px;
