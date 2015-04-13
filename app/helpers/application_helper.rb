@@ -23,7 +23,7 @@ module ApplicationHelper
 	def display_edit_image(graphic)
 		content_tag(:div, class: "grid-image edit-image", id: "#{graphic.id}", data: "") do
 	  	@content = content_tag(:div, image_tag(graphic.visual.url(:small)), class: "", id: "#{graphic.id}", data: "")
-			@content << content_tag(:div, link_to("EDITAR", edit_graphic_path(graphic)), class: "edit-image-overlay-link")
+			@content << content_tag(:div, link_to("EDITAR", edit_graphic_path(graphic, section_id: graphic.section.id)), class: "edit-image-overlay-link")
 			@content << content_tag(:h1, "#{graphic.position}", class: "edit-image-overlay")
 		end
 	end

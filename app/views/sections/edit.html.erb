@@ -2,27 +2,17 @@
 
 
 <%= link_to("AGREGAR IMAGEN", new_graphic_path(:section_id => @section.id)) %> 
-<%= link_to("SHUFFLE", shuffle_section_path(:id => @section.id )) %> 
+<%= link_to("SHUFFLE", shuffle_section_path(:section_id => @section.id )) %> 
 
 <div class="container grid-image-container" style="margin-top: 20px">
 		<div classd="row">
 			<div id='container' >
 				<% @graphics.each do |graphic| %>
-					
-						<%= display_edit_image(graphic) %> 
-					
+					<%= display_edit_image(graphic) %> 
 				<% end %>
 			</div>
 		</div>
 </div>
 
-<div id="section-edit" class="border">
-	<% for graphic in @section.graphics %>
-		<div class="mini-image-container border">
-			<%= image_tag(graphic.visual.url(:small)) %>
-			<%= link_to("EDITAR", edit_graphic_path(graphic, :section_id => @section.id)) %> 
-		</div>
-		
-	<% end %>
-</div>
+
 

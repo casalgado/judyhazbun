@@ -25,7 +25,7 @@ class SectionsController < ApplicationController
   end
 
   def shuffle
-    section = Section.find(params[:id])
+    section = Section.find(params[:section_id])
     Graphic.shuffle(section.graphics)
     redirect_to edit_section_path(section)
   end

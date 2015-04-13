@@ -38,7 +38,7 @@ class GraphicsController < ApplicationController
       if params[:graphic][:visual].present?
         render 'crop'
       else
-        redirect_to edit_section_path(@graphic.section)
+        redirect_to edit_section_path(id: @graphic.section.id)
       end
     else
       render 'edit'
