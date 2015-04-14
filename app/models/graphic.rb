@@ -15,7 +15,7 @@ class Graphic < ActiveRecord::Base
 
 	# Callbacks
 
-	after_create :set_position
+	before_create :set_position
 
 	# Methods
 
@@ -43,7 +43,12 @@ class Graphic < ActiveRecord::Base
   private
 
   def set_position
-  	self.position = self.id
+    if self.section.graphics.empty?
+      self.position = 1
+    else
+      positions = self.section.graphics.collect {|x| x.position }
+  	  self.position = positions.sort[-1] + 1
+    end
   end
 
 end
