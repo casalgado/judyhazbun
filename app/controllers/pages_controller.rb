@@ -38,7 +38,7 @@ class PagesController < ApplicationController
     render "sections/show"
   end
 
-  def zansibar
+  def zanzibar
     section      = Section.find(7)
     @graphics    = section.graphics.order('position')
     @image_left  = ""
