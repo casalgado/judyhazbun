@@ -19,6 +19,7 @@ Judyhazbun::Application.routes.draw do
     get 'pueblodemujeres', on: :collection
     get 'blancoynegro'   , on: :collection
     get 'heritage'       , on: :collection
+    get 'lucesdenegro'   , on: :collection
   end
 
   root to: "pages#home"
