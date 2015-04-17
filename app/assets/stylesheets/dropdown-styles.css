@@ -1,5 +1,35 @@
 
+
+/* dropdown */
+
 .dropdown-menu {
 	text-align: center;
 }
 
+.nav-div {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 400;
+  position:relative;
+  padding-bottom: 5px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.nav-div:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-div-menu {
+  top: 38px;
+  left: -49px;
+  font-size: 80%;
+  border: 1px solid black;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.nav-div-menu>li>a:hover {
+  background-image: none !important;
+  background-color: white !important;
+}

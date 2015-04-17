@@ -27,10 +27,7 @@
 								  <div class="nav-div dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 								    COLECCIONES
 								  </div>
-								  <ul class="dropdown-menu nav-div-menu" role="menu" aria-labelledby="dropdownMenu1">
-								    <li role="presentation"><%= link_to("COLECCION H", coleccionh_pages_path, method: :get ) %></li>
-  									<li role="presentation"><%= link_to("JUDY HAZBUN", judyhazbun_pages_path, method: :get ) %></li>
-								  </ul>
+								 	<%= render "layouts/dropdown_menu" %>
 								</div> 
 							</li>
 		         <li class=""> <%= link_to("HAZ"     , haz_pages_path     , method: :get ) %> </li>
