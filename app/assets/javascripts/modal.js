@@ -7,12 +7,18 @@ var modal = function() {
 	  $(".grid-image").hover(function() {
 	        $(this).css('cursor','pointer');
 	    });
+
 	  $(".grid-image").on('click', function() {
         var $imageName = $(this).attr("id")
 	    var $imageDescription = $(this).attr("data")
 	    $('#modal-image').html("<img src='" + $imageName + "') >");
+        $('#modal-image > img').hide()
+        $('#modal-image > img').on('load', function() {
+            $('#modal-image > img').fadeIn(300)
+        });
         $('#image-description').html($imageDescription)
 	  });
+
       $(".grid-image").attr("data-toggle", "modal");
       $(".grid-image").attr("data-target", "#myModal");
 };
