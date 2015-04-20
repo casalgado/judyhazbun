@@ -49,6 +49,15 @@ a {
 	border: 1px solid gray;
 }
 
+@media(max-width:767px){
+	.grid {
+		margin-left: 250px;
+	}
+	.home-image-text {
+		width: 10%;
+		height: 10%;
+	}
+}
 
 
 
