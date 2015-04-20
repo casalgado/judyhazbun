@@ -15,6 +15,8 @@ var modal = function() {
         $('#modal-image > img').hide()
         $('#modal-image > img').on('load', function() {
             $('#modal-image > img').fadeIn(300)
+            $imgHeight = $('#modal-image > img').height()
+            $('#modal-image').height($imgHeight)
         });
         $('#image-description').html($imageDescription)
 	  });
