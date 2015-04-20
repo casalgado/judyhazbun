@@ -5,7 +5,7 @@
 
 var ready = function() {
 
-  $('.home-image-text').delay(5000).fadeIn(3000);
+  $('.home-image-text').hide().delay(1000).fadeIn( 800 );
   
 	$('#home-image-1').on('mouseover', function() {
         $('#home-image-1-text').css("background-color", "white");
