@@ -11,8 +11,8 @@ class PagesController < ApplicationController
   def judyhazbun
     section      = Section.find(2)
     @graphics    = section.graphics.order('position')
-    @image_left  = ""
-    @image_right = ""
+    @image_left  = "hero-template-05.png"
+    @image_right = "hero-template-06.png"
     render "sections/show"
   end
 
@@ -33,16 +33,16 @@ class PagesController < ApplicationController
   def lucesdenegro
     section      = Section.find(5)
     @graphics    = section.graphics.order('position')
-    @image_left  = ""
-    @image_right = ""
+    @image_left  = "hero-template-07.png"
+    @image_right = "hero-template-08.png"
     render "sections/show"
   end
 
   def zanzibar
     section      = Section.find(7)
     @graphics    = section.graphics.order('position')
-    @image_left  = ""
-    @image_right = ""
+    @image_left  = "hero-template-09.png"
+    @image_right = "hero-template-10.png"
     render "sections/show"
   end
 
@@ -57,8 +57,8 @@ class PagesController < ApplicationController
   def pueblodemujeres
     section      = Section.find(9)
     @graphics    = section.graphics.order('position')
-    @image_left  = ""
-    @image_right = ""
+    @image_left  = "hero-template-11.png"
+    @image_right = "hero-template-12.png"
     render "sections/show"
   end
 
