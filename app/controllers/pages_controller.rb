@@ -18,6 +18,7 @@ class PagesController < ApplicationController
 
   def haz
     section      = Section.find(3)
+    @cities      = true
     @graphics    = section.graphics.order('position')
     @image_left  = "hero-template-03.png"
     @image_right = "hero-template-04.png"

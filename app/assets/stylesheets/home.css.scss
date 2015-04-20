@@ -16,12 +16,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: asset-url("home/home-page-content-02.png", image);
+  background-image: asset-url("home/home-page-content-04.png", image);
   background-size: cover;
-}
-
-#home-image-1:hover {
-	background-image: asset-url("home/home-page-content-01.png", image);
 }
 
 #home-image-2 {
@@ -30,10 +26,31 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: asset-url("home/home-page-content-04.png", image);
+  background-image: asset-url("home/home-page-content-01.png", image);
   background-size: cover;
 }
 
-#home-image-2:hover {
-	background-image: asset-url("home/home-page-content-03.png", image);
+.home-image-text {
+  font-family: 'Montserrat';
+  position: absolute;
+  width: 155px;
+  height: 32px;
+  background-color: black;
+  color: white;
+
+  p {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 3px;
+  }
+}
+
+#home-image-1-text {
+  top: 110px;
+  left: 850px;
+}
+
+#home-image-2-text {
+  top: 90px;
+  left: 190px;
 }
