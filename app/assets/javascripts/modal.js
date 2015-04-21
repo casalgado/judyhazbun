@@ -11,6 +11,7 @@ var modal = function() {
 	  $(".grid-image").on('click', function() {
         var $imageName = $(this).attr("id")
 	    var $imageDescription = $(this).attr("data")
+        $('#modal-image').height(1500)
 	    $('#modal-image').html("<img src='" + $imageName + "') >");
         $('#modal-image > img').hide()
         $('#modal-image > img').on('load', function() {
