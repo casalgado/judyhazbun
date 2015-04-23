@@ -9,17 +9,21 @@ var modal = function() {
 	    });
 
 	  $(".grid-image").on('click', function() {
+
+        $('#loading-image').show()
         var $imageName = $(this).attr("id")
 	    var $imageDescription = $(this).attr("data")
-        $('#modal-image').height(1500)
 	    $('#modal-image').html("<img src='" + $imageName + "') >");
-        $('#modal-image > img').hide()
-        $('#modal-image > img').on('load', function() {
-            $('#modal-image > img').fadeIn(300)
-            $imgHeight = $('#modal-image > img').height()
-            $('#modal-image').height($imgHeight)
+        var $image = $('#modal-image > img')
+        $image.hide()
+
+        $image.on('load', function() {
+            $image.fadeIn(500)
+            $('#loading-image').hide()
         });
+
         $('#image-description').html($imageDescription)
+
 	  });
 
       $(".grid-image").attr("data-toggle", "modal");
