@@ -7,7 +7,7 @@ var ready = function() {
 
   $('.home-image-text').hide()
 
-  $('#home-image-container').waitForImages(function() {
+  $('.home-image-1').waitForImages(function() {
     $('.home-image-text').delay( 1000 ).fadeIn( 1000 )
   });
   
