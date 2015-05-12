@@ -5,7 +5,12 @@
 
 var ready = function() {
 
-  $('.home-image-text').hide().delay(1000).fadeIn( 800 );
+  $('.home-image-text').hide()
+
+  $('#home-image-container').waitForImages(function() {
+    $('.home-image-text').delay( 1000 ).fadeIn( 1000 )
+  });
+  
   
 	$('#home-image-1').on('mouseover', function() {
         $('#home-image-1-text').css("background-color", "white");
